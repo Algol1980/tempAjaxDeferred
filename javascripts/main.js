@@ -1,8 +1,7 @@
 var headUrl = 'http://bi0morph.github.io/ajax2/';
 var htmlList = ['box1.html', 'box2.html', 'box3.html'];
 
-
-$.when($.ajax('box1.html'), $.ajax('box2.html'),).done(function(args1, args2) { 
+$.when($.ajax('box1.html'), $.ajax('box2.html')).done(function(args1, args2) { 
 	$('.wrapper').append(args1); 
 	$('.wrapper').append(args2); 
 	$(".box1").animate({
@@ -12,7 +11,6 @@ $.when($.ajax('box1.html'), $.ajax('box2.html'),).done(function(args1, args2) {
         right: "200px",
       }, 1500 );
 });
-
 // var someDeffered = $.ajax(headUrl + htmlList[0]);
 // 	someDeffered.then(function(result){
 
