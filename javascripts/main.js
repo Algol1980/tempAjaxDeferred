@@ -5,10 +5,10 @@ $.when($.ajax('box1.html'), $.ajax('box2.html')).done(function(args1, args2) {
 	$('.wrapper').append(args1); 
 	$('.wrapper').append(args2); 
 	$(".box1").animate({
-        left: "200px",
+        left: "500px",
       }, 1500 );
 	$(".box2").animate({
-        right: "200px",
+        right: "500px",
       }, 1500 );
 });
 // var someDeffered = $.ajax(headUrl + htmlList[0]);
